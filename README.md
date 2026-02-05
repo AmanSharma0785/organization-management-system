@@ -12,27 +12,29 @@ This project follows **real-world architecture**, clean code practices, and prop
 ## Features
 
 ### Admin (Superuser)
-- Login / Logout
-![OMS Screenshot](static/login.png)
-- Manage Employees (CRUD)
-  - Add Employee
+- **View All Employees**
+- **View Attendance of All Employees**
+- **Secure admin-only access**
+- **Login / Logout**
+    ![OMS Screenshot](static/login.png)
+- **Manage Employees (CRUD)**
+  - ***Add Employee***
     ![OMS Screenshot](static/add_emp.png)
-  - Edit Employee
+  - ***Edit Employee***
   ![OMS Screenshot](static/edit_emp.png)
-  - Delete Employee
+  - ***Delete Employee***
  ![OMS Screenshot](static/del_confirm.png)
-- View All Employees
-- View Attendance of All Employees
-- Secure admin-only access
+
 
 ### Employee (Normal User)
-- Login / Logout
-- View Own Profile
-![OMS Screenshot](static/profile.png)
-- Mark Daily Attendance (Present / Absent / Leave)
- ![OMS Screenshot](static/attendance.png)
-- Cannot access admin pages
-- No “Access Denied” errors (Smart Redirect UX)
+- **Login / Logout**
+- **Cannot access admin pages**
+- **No “Access Denied” errors (Smart Redirect UX)**
+- **View Own Profile**
+    ![OMS Screenshot](static/profile.png)
+- **Mark Daily Attendance (Present / Absent / Leave)**
+    ![OMS Screenshot](static/attendance.png)
+
 
 
 ---
@@ -51,30 +53,31 @@ This project follows **real-world architecture**, clean code practices, and prop
 organization_ms/
 │
 ├── accounts/
-│ ├── migrations/
-│ ├── templates/
-│ │ └── accounts/
-│ │ ├── base.html
-│ │ ├── login.html
-│ │ ├── employee_list.html
-│ │ ├── add_employee.html
-│ │ ├── edit_employee.html
-│ │ ├── delete_employee.html
-│ │ ├── employee_profile.html
-│ │ ├── attendance_list.html
-│ │ └── mark_attendance.html
-│ ├── models.py
-│ ├── views.py
-│ ├── forms.py
-│ └── urls.py
+│   ├── migrations/
+│   ├── templates/
+│   │   └── accounts/
+│   │       ├── base.html
+│   │       ├── login.html
+│   │       ├── employee_list.html
+│   │       ├── add_employee.html
+│   │       ├── edit_employee.html
+│   │       ├── delete_employee.html
+│   │       ├── employee_profile.html
+│   │       ├── attendance_list.html
+│   │       └── mark_attendance.html
+│   ├── models.py
+│   ├── views.py
+│   ├── forms.py
+│   └── urls.py
 │
 ├── organization_ms/
-│ ├── settings.py
-│ ├── urls.py
+│   ├── settings.py
+│   └── urls.py
 │
 ├── db.sqlite3
 ├── manage.py
 └── README.md
+
 ---
 
 ## Database Models
