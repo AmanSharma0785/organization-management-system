@@ -1,0 +1,22 @@
+{% extends 'accounts/base.html' %}
+{% block title %}My Profile{% endblock %}
+
+{% block content %}
+<div class="card mx-auto" style="max-width: 500px;">
+    <div class="card-body">
+        <h4 class="card-title text-center mb-3">Employee Profile</h4>
+
+        <p><b>Username:</b> {{ employee.user.username }}</p>
+        <p><b>Email:</b> {{ employee.user.email }}</p>
+        <p><b>Department:</b> {{ employee.department }}</p>
+        <p><b>Role:</b> {{ employee.role }}</p>
+        <p><b>Mobile:</b> {{ employee.mobile }}</p>
+
+        <div class="text-center mt-3">
+            <a href="{% url 'mark_attendance' %}" class="btn btn-success btn-sm">
+                Mark Attendance
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}

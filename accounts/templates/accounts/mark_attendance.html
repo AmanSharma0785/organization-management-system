@@ -1,0 +1,15 @@
+{% extends 'accounts/base.html' %}
+{% block title %}Mark Attendance{% endblock %}
+
+{% block content %}
+<h3>Mark Attendance</h3>
+
+<form method="POST">
+    {% csrf_token %}
+    <div class="mb-3">
+        <label>Status</label>
+        {{ form.status }}
+    </div>
+    <button class="btn btn-primary">Submit</button>
+</form>
+{% endblock %}
