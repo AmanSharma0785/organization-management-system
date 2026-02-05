@@ -16,13 +16,17 @@ This project follows **real-world architecture**, clean code practices, and prop
 - **View Attendance of All Employees**
 - **Secure admin-only access**
 - **Login / Logout**
+  
     ![OMS Screenshot](static/login.png)
 - **Manage Employees (CRUD)**
   - ***Add Employee***
+    
     ![OMS Screenshot](static/add_emp.png)
   - ***Edit Employee***
+    
   ![OMS Screenshot](static/edit_emp.png)
   - ***Delete Employee***
+    
  ![OMS Screenshot](static/del_confirm.png)
 
 
@@ -31,8 +35,10 @@ This project follows **real-world architecture**, clean code practices, and prop
 - **Cannot access admin pages**
 - **No “Access Denied” errors (Smart Redirect UX)**
 - **View Own Profile**
+  
     ![OMS Screenshot](static/profile.png)
 - **Mark Daily Attendance (Present / Absent / Leave)**
+  
     ![OMS Screenshot](static/attendance.png)
 
 
@@ -50,33 +56,36 @@ This project follows **real-world architecture**, clean code practices, and prop
 
 ## 📁 Project Structure
 
-organization_ms/
-│
-├── accounts/
-│   ├── migrations/
-│   ├── templates/
-│   │   └── accounts/
-│   │       ├── base.html
-│   │       ├── login.html
-│   │       ├── employee_list.html
-│   │       ├── add_employee.html
-│   │       ├── edit_employee.html
-│   │       ├── delete_employee.html
-│   │       ├── employee_profile.html
-│   │       ├── attendance_list.html
-│   │       └── mark_attendance.html
-│   ├── models.py
-│   ├── views.py
-│   ├── forms.py
-│   └── urls.py
-│
-├── organization_ms/
-│   ├── settings.py
-│   └── urls.py
-│
-├── db.sqlite3
-├── manage.py
-└── README.md
+<pre>
+organization_ms/<br>
+│<br>
+├── accounts/<br>
+│   ├── migrations/<br>
+│   ├── templates/<br>
+│   │   └── accounts/<br>
+│   │       ├── base.html<br>
+│   │       ├── login.html<br>
+│   │       ├── employee_list.html<br>
+│   │       ├── add_employee.html<br>
+│   │       ├── edit_employee.html<br>
+│   │       ├── delete_employee.html<br>
+│   │       ├── employee_profile.html<br>
+│   │       ├── attendance_list.html<br>
+│   │       └── mark_attendance.html<br>
+│   ├── models.py<br>
+│   ├── views.py<br>
+│   ├── forms.py<br>
+│   └── urls.py<br>
+│<br>
+├── organization_ms/<br>
+│   ├── settings.py<br>
+│   └── urls.py<br>
+│<br>
+├── db.sqlite3<br>
+├── manage.py<br>
+└── README.md<br>
+</pre>
+
 
 
 ---
